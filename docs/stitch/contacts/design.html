@@ -1,0 +1,961 @@
+<!DOCTYPE html><html lang="th"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+Thai:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;font-family:'Inter','Noto Sans Thai',sans-serif;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary": "#ffffff",
+          "on-surface-variant": "#464555",
+          "secondary": "#565e74",
+          "error": "#ba1a1a",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#777587",
+          "on-surface": "#0b1c30",
+          "on-primary-container": "#dad7ff",
+          "on-secondary-fixed-variant": "#3f465c",
+          "inverse-on-surface": "#eaf1ff",
+          "primary-fixed-dim": "#c3c0ff",
+          "on-tertiary-fixed-variant": "#005236",
+          "surface-tint": "#4d44e3",
+          "on-primary-fixed-variant": "#3323cc",
+          "on-tertiary-container": "#67f4b7",
+          "on-secondary": "#ffffff",
+          "secondary-container": "#dae2fd",
+          "surface-container-low": "#eff4ff",
+          "surface-container-high": "#dce9ff",
+          "on-tertiary-fixed": "#002113",
+          "on-primary-fixed": "#0f0069",
+          "inverse-surface": "#213145",
+          "surface-dim": "#cbdbf5",
+          "surface": "#f8f9ff",
+          "tertiary-fixed": "#6ffbbe",
+          "secondary-fixed": "#dae2fd",
+          "secondary-fixed-dim": "#bec6e0",
+          "on-error-container": "#93000a",
+          "on-secondary-container": "#5c647a",
+          "on-background": "#0b1c30",
+          "on-tertiary": "#ffffff",
+          "outline-variant": "#c7c4d8",
+          "surface-container": "#e5eeff",
+          "background": "#f8f9ff",
+          "primary-container": "#4f46e5",
+          "tertiary-fixed-dim": "#4edea3",
+          "surface-container-highest": "#d3e4fe",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#131b2e",
+          "tertiary-container": "#006e4b",
+          "primary": "#3525cd",
+          "error-container": "#ffdad6",
+          "surface-variant": "#d3e4fe",
+          "surface-bright": "#f8f9ff",
+          "inverse-primary": "#c3c0ff",
+          "primary-fixed": "#e2dfff",
+          "tertiary": "#005338"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xl": "2rem",
+          "space-lg": "1.5rem",
+          "margin-lg": "2rem",
+          "space-md": "1rem",
+          "space-xs": "0.25rem",
+          "gutter": "1rem",
+          "gutter-lg": "1.5rem",
+          "space-2xl": "3rem",
+          "space-sm": "0.5rem",
+          "margin": "1.5rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "label-xs": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Inter"
+          ],
+          "headline-sm": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "display-lg": [
+            "Inter"
+          ],
+          "display-lg-mobile": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "numeric-data": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-xs": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "display-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "numeric-data": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Follow-up Board Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1ULn-yxm49Yg9MMTMywspmH-b67jw3463N1xwso1JV5EriULcNFMamYTBJ_JcNRPUbK_uPVXr1UpNOkOoj4VmOJX799AlGllO8ceSuS4HDcOap2FPkUgUq-j3tYPzEDCcwpCYvoZm7XIOwVadxg6RQ7NHg75tTVmshMbHXu3ysMm9L6zQFLGzksp7-e5tH9RbnHDxsq2MeI65IO11Zv8pQcTrHgM0skpG5CJx0GOxFqMn6P1IugvpZ2Cg"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight leading-none">Follow-up Board</span><span class="font-label-xs text-label-xs text-on-surface-variant">ระบบติดตามลูกค้า</span></div></div><div class="px-space-md py-space-sm"><div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-primary text-base">domain</span><div class="truncate"><p class="font-label-sm text-label-sm text-on-surface truncate leading-tight font-medium">ทีมพัฒนาธุรกิจภูมิภาค (APAC)</p><p class="font-label-xs text-label-xs text-on-surface-variant leading-tight">Enterprise Plan</p></div></div><span class="material-symbols-outlined text-on-surface-variant text-base">unfold_more</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-sm" data-active-classes="bg-primary text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="แดชบอร์ด" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">dashboard</span><span class="">แดชบอร์ด</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm transition-colors bg-primary text-on-primary font-medium rounded-lg shadow-sm" data-path="รายชื่อผู้ติดต่อ" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">group</span><span class="">รายชื่อผู้ติดต่อ</span></div><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-xs text-label-xs">128</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="เพิ่มผู้ติดต่อใหม่" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">person_add</span><span class="">เพิ่มผู้ติดต่อใหม่</span></div><span class="material-symbols-outlined text-sm">add</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ปฏิทินติดตามงาน" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">calendar_month</span><span class="">ปฏิทินติดตามงาน</span></div><span class="px-space-xs py-0.5 rounded-full bg-error text-on-error font-label-xs text-label-xs">3 วันนี้</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ตั้งค่าระบบ" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-xl">settings</span><span class="">ตั้งค่าระบบ</span></div></a></nav></div><div class="p-space-md"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex flex-col"><span class="font-label-xs text-label-xs text-on-surface-variant">สถานะเซิร์ฟเวอร์</span><span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1"><span class="h-1.5 w-1.5 rounded-full bg-tertiary-container inline-block"></span>ซิงค์เรียลไทม์</span></div><span class="material-symbols-outlined text-on-surface-variant text-base">cloud_done</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin-lg"><div class="flex items-center gap-space-lg w-full max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-12 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest" placeholder="ค้นหาชื่อ, เบอร์โทร, บริษัท..." type="text"><span class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-xs text-label-xs pointer-events-none">⌘K</span></div><div class="hidden xl:flex items-center gap-space-xs whitespace-nowrap text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-base">event</span><span class="">วันนี้: 24 ตุลาคม 2024</span></div></div><div class="flex items-center gap-space-md"><a class="inline-flex items-center gap-space-xs px-space-md h-9 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] hover:bg-primary transition-colors whitespace-nowrap" data-path="เพิ่มผู้ติดต่อใหม่" href="#"><span class="material-symbols-outlined text-base">add</span><span class="">เพิ่มผู้ติดต่อ</span></a><div class="relative flex items-center justify-center"><button aria-label="การแจ้งเตือนงานติดตาม" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span></span></button></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHLPeMYZyfFe1NX9G7K1NeNs5ssP3m9I0yeVbREvjjTcYMqzfSiiIgWbWGsyHxkCAdbIWBns5jhpWo6AYUM-bHMdBhzyf0W3Zbtl4sf8ZXVtC4cZD_D1Xfa4vxKWVtuOrPRWp_4cZMM5IVAboVxxsLnrWiZ95xNaX0TvDu9UtuesTpcZmf1h8MWfclOPuZ4SZnzTsO8EU-BpiBmxMAppdwxW7XcqRrC-9oPOqEIc5gCNJVLoh-C2OL"><div class="hidden md:flex flex-col text-left leading-none"><span class="font-label-sm text-label-sm text-on-surface font-semibold">คุณวิภาดา รัตนกุล</span><span class="font-label-xs text-label-xs text-on-surface-variant mt-0.5">ฝ่ายพัฒนาธุรกิจ</span></div></div></div></header><main class="relative pt-16 w-full bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Viewport Padding Wrapper -->
+<div class="px-margin-lg py-space-lg flex flex-col gap-space-lg">
+<!-- 1. Header Section -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">รายชื่อผู้ติดต่อทั้งหมด</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+            148 รายชื่อ
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          จัดการฐานข้อมูลลูกค้า บันทึกการโทร นัดหมาย และควบคุมไทม์ไลน์ติดตามงานแบบเรียลไทม์
+        </p>
+</div>
+<!-- Header Action Buttons -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="inline-flex items-center gap-1.5 px-space-md h-9 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-lg text-on-surface-variant">upload_file</span>
+<span class="">นำเข้าไฟล์ (Import)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md h-9 bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-lg text-on-surface-variant">file_download</span>
+<span class="">ส่งออก Excel/CSV</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md h-9 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg shadow-sm hover:bg-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">person_add</span>
+<span class="">เพิ่มผู้ติดต่อใหม่</span>
+</button>
+</div>
+</section>
+<!-- 2. Search, Status Tabs & Fine Filters Container -->
+<section class="flex flex-col gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm"><!-- Search Input Bar -->
+<div class="relative w-full">
+  <span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl pointer-events-none">search</span>
+  <input class="w-full h-11 pl-11 pr-14 rounded-lg bg-surface-container-low/50 text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-colors" placeholder="ค้นหาด้วยชื่อ, นามสกุล, บริษัท, เบอร์โทร, LINE ID หรืออีเมล..." type="text">
+  <div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+    <kbd class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs">⌘</kbd>
+    <kbd class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs">F</kbd>
+  </div>
+</div>
+<!-- Quick Status Filter Pills (Calm, low-saturation style) -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+  <!-- Tab: All -->
+  <button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-medium shadow-sm whitespace-nowrap" type="button">
+    <span class="">ทั้งหมด</span>
+    <span class="px-1.5 py-0.5 rounded-full bg-surface-container-lowest/20 text-on-primary font-label-xs text-label-xs font-semibold">148</span>
+  </button>
+  <!-- Tab: Today -->
+  <button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+    <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+    <span class="text-on-surface">ต้องติดตามวันนี้</span>
+    <span class="px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-900 font-label-xs text-label-xs font-semibold">7</span>
+  </button>
+  <!-- Tab: Overdue -->
+  <button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+    <span class="w-2 h-2 rounded-full bg-error"></span>
+    <span class="text-on-surface">เกินกำหนด</span>
+    <span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-xs text-label-xs font-semibold">3</span>
+  </button>
+  <!-- Tab: In Progress -->
+  <button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+    <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+    <span class="text-on-surface">กำลังดำเนินการ</span>
+    <span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-xs text-label-xs font-semibold">42</span>
+  </button>
+  <!-- Tab: Completed -->
+  <button class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+    <span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+    <span class="text-on-surface">สำเร็จแล้ว</span>
+    <span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-xs text-label-xs font-semibold">68</span>
+  </button>
+</div>
+<!-- Secondary Multi-dropdown Filter Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+  <div class="flex flex-wrap items-center gap-space-xs">
+    <div class="relative">
+      <select class="appearance-none h-8 pl-3 pr-8 rounded-lg bg-surface font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+        <option value="">สถานะ: ทั้งหมด</option>
+        <option value="pending">รอติดตาม</option>
+        <option value="in_contact">กำลังติดต่อ</option>
+        <option value="quotation">เสนอราคา</option>
+        <option value="closed">ปิดการขาย</option>
+        <option value="cancelled">ยกเลิก</option>
+      </select>
+      <span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-sm text-on-surface-variant pointer-events-none">expand_more</span>
+    </div>
+    <div class="relative">
+      <select class="appearance-none h-8 pl-3 pr-8 rounded-lg bg-surface font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+        <option value="">ช่องทางติดต่อ: ทั้งหมด</option>
+        <option value="phone">โทรศัพท์ (Phone)</option>
+        <option value="line">LINE Official</option>
+        <option value="email">อีเมล (Email)</option>
+        <option value="facebook">Facebook Messenger</option>
+      </select>
+      <span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-sm text-on-surface-variant pointer-events-none">expand_more</span>
+    </div>
+    <div class="relative">
+      <select class="appearance-none h-8 pl-3 pr-8 rounded-lg bg-surface font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+        <option value="">ช่วงเวลาติดตาม: ทั้งหมด</option>
+        <option value="today">วันนี้</option>
+        <option value="tomorrow">พรุ่งนี้</option>
+        <option value="this_week">สัปดาห์นี้</option>
+        <option value="this_month">เดือนนี้</option>
+      </select>
+      <span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-sm text-on-surface-variant pointer-events-none">expand_more</span>
+    </div>
+    <button class="inline-flex items-center gap-1 h-8 px-2.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 font-label-sm text-label-sm transition-colors" type="button">
+      <span class="material-symbols-outlined text-base">filter_alt_off</span>
+      <span class="">ล้างตัวกรอง (Clear Filters)</span>
+    </button>
+  </div>
+  <div class="flex items-center gap-2">
+    <span class="font-label-xs text-label-xs text-on-surface-variant">เรียงลำดับ:</span>
+    <span class="font-label-sm text-label-sm font-medium text-on-surface flex items-center gap-1 cursor-pointer hover:text-primary transition-colors">
+      กำหนดการติดตามล่าสุด
+      <span class="material-symbols-outlined text-sm text-primary">arrow_downward</span>
+    </span>
+  </div>
+</div></section>
+<!-- 4. Batch Action Bar (Active preview simulation) -->
+<div class="flex items-center justify-between px-space-md py-2 rounded-xl bg-surface-container-high text-on-surface shadow-sm" id="batch-action-bar">
+  <div class="flex items-center gap-space-md">
+    <div class="flex items-center gap-2 font-label-md text-label-md">
+      <span class="flex h-2 w-2 rounded-full bg-primary"></span>
+      <span class="font-semibold text-on-surface">เลือกแล้ว 1 รายการ</span>
+      <span class="text-on-surface-variant font-normal text-xs">(คุณธนกร เลิศวิจิตร)</span>
+    </div>
+    <div class="h-4 w-px bg-outline-variant"></div>
+    <div class="flex items-center gap-1.5">
+      <button class="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-sm text-label-sm shadow-sm transition-colors" type="button">
+        <span class="material-symbols-outlined text-sm text-on-surface-variant">swap_horiz</span>
+        <span class="">เปลี่ยนสถานะ</span>
+      </button>
+      <button class="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-sm text-label-sm shadow-sm transition-colors" type="button">
+        <span class="material-symbols-outlined text-sm text-on-surface-variant">event_repeat</span>
+        <span class="">เลื่อนนัดหมาย</span>
+      </button>
+      <button class="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-sm text-label-sm shadow-sm transition-colors" type="button">
+        <span class="material-symbols-outlined text-sm text-on-surface-variant">file_download</span>
+        <span class="">ส่งออกรายการ</span>
+      </button>
+      <button class="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-error-container text-on-error-container hover:bg-error hover:text-on-error font-label-sm text-label-sm transition-colors" type="button">
+        <span class="material-symbols-outlined text-sm">delete</span>
+        <span class="">ลบรายชื่อ</span>
+      </button>
+    </div>
+  </div>
+  <button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-lowest transition-colors flex items-center" title="ยกเลิกการเลือก" type="button">
+    <span class="material-symbols-outlined text-lg">close</span>
+  </button>
+</div>
+<!-- 3. Data Table Section -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<!-- Table Header -->
+<thead class="bg-surface-container-low text-on-surface-variant font-label-xs text-label-xs uppercase">
+<tr>
+<th class="w-12 px-4 py-3" scope="col">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+</th>
+<th class="px-4 py-3 font-semibold" scope="col">ชื่อผู้ติดต่อ &amp; บริษัท</th>
+<th class="px-4 py-3 font-semibold" scope="col">ช่องทางติดต่อ</th>
+<th class="px-4 py-3 font-semibold" scope="col">สถานะ</th>
+<th class="px-4 py-3 font-semibold" scope="col">กำหนดติดตาม</th>
+<th class="px-4 py-3 font-semibold" scope="col">หมายเหตุล่าสุด</th>
+<th class="px-4 py-3 text-right font-semibold" scope="col">จัดการ</th>
+</tr>
+</thead>
+<!-- Table Body -->
+<tbody class="divide-none font-body-md text-body-md text-on-surface"><!-- Item 1: Checked for demonstration (Today follow-up) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-low/40">
+  <td class="px-4 py-4 align-middle">
+    <input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-semibold font-label-md text-label-md flex-shrink-0 shadow-sm">
+        ธล
+      </div>
+      <div class="flex flex-col min-w-0">
+        <a class="font-headline-sm text-headline-sm font-semibold text-primary hover:underline truncate" href="#">
+          คุณธนกร เลิศวิจิตร
+        </a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant truncate">TechCorp Co., Ltd.</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex flex-col gap-1">
+      <div class="inline-flex items-center gap-1.5 text-on-surface font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm text-secondary">call</span>
+        <span class="font-numeric-data text-numeric-data">081-998-7654</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 text-emerald-700 font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">chat</span>
+        <span class="">@thanakorn.t</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 font-label-xs text-label-xs font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+      ต้องติดตามวันนี้
+    </span>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <div class="flex flex-col">
+      <span class="font-label-sm text-label-sm font-semibold text-amber-700 flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm text-amber-600">schedule</span> วันนี้ 10:30 น.
+      </span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant pl-5">24 ต.ค. 2024</span>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle max-w-xs">
+    <p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+      สนใจโซลูชัน Cloud ติดตามผลการเสนอราคา 1.2M
+    </p>
+  </td>
+  <td class="px-4 py-4 align-middle text-right whitespace-nowrap">
+    <div class="flex items-center justify-end gap-1 text-on-surface-variant">
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="ดูรายละเอียด" type="button">
+        <span class="material-symbols-outlined text-lg">visibility</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="แก้ไข" type="button">
+        <span class="material-symbols-outlined text-lg">edit</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-error transition-colors" title="ลบ" type="button">
+        <span class="material-symbols-outlined text-lg">delete</span>
+      </button>
+    </div>
+  </td>
+</tr>
+<!-- Item 2: Today follow-up -->
+<tr class="hover:bg-surface-container-low transition-colors">
+  <td class="px-4 py-4 align-middle">
+    <input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-rose-100 text-rose-800 flex items-center justify-center font-semibold font-label-md text-label-md flex-shrink-0 shadow-sm">
+        พว
+      </div>
+      <div class="flex flex-col min-w-0">
+        <a class="font-headline-sm text-headline-sm font-semibold text-on-surface hover:text-primary hover:underline truncate" href="#">
+          คุณพิมพา วงศ์สวัสดิ์
+        </a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant truncate">Siam Retail</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex flex-col gap-1">
+      <div class="inline-flex items-center gap-1.5 text-on-surface font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm text-secondary">mail</span>
+        <span class="">pimpa@siamretail.co.th</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">call</span>
+        <span class="font-numeric-data text-numeric-data">082-334-5566</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 font-label-xs text-label-xs font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+      ต้องติดตามวันนี้
+    </span>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <div class="flex flex-col">
+      <span class="font-label-sm text-label-sm font-semibold text-amber-700 flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm text-amber-600">schedule</span> วันนี้ 11:15 น.
+      </span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant pl-5">24 ต.ค. 2024</span>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle max-w-xs">
+    <p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+      ส่งโบรชัวร์ตัวใหม่ทางอีเมลแล้ว นัดโทรเช็กความคืบหน้า
+    </p>
+  </td>
+  <td class="px-4 py-4 align-middle text-right whitespace-nowrap">
+    <div class="flex items-center justify-end gap-1 text-on-surface-variant">
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="ดูรายละเอียด" type="button">
+        <span class="material-symbols-outlined text-lg">visibility</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="แก้ไข" type="button">
+        <span class="material-symbols-outlined text-lg">edit</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-error transition-colors" title="ลบ" type="button">
+        <span class="material-symbols-outlined text-lg">delete</span>
+      </button>
+    </div>
+  </td>
+</tr>
+<!-- Item 3: In Progress (Future Date) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+  <td class="px-4 py-4 align-middle">
+    <input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-semibold font-label-md text-label-md flex-shrink-0 shadow-sm">
+        กพ
+      </div>
+      <div class="flex flex-col min-w-0">
+        <a class="font-headline-sm text-headline-sm font-semibold text-on-surface hover:text-primary hover:underline truncate" href="#">
+          คุณกิตติศักดิ์ พัฒนศิลป์
+        </a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant truncate">บจก. พัฒนาการขนส่ง</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex flex-col gap-1">
+      <div class="inline-flex items-center gap-1.5 text-emerald-700 font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">chat</span>
+        <span class="">kittisak.logistics</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">call</span>
+        <span class="font-numeric-data text-numeric-data">089-112-3344</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-xs text-label-xs font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+      กำลังดำเนินการ
+    </span>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <div class="flex flex-col">
+      <span class="font-label-sm text-label-sm font-semibold text-on-surface flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm text-secondary">event</span> พรุ่งนี้ 14:00 น.
+      </span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant pl-5">25 ต.ค. 2024</span>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle max-w-xs">
+    <p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+      ต้องการปรับเงื่อนไขเครดิตเทอม นัดเจรจากับผู้จัดการ
+    </p>
+  </td>
+  <td class="px-4 py-4 align-middle text-right whitespace-nowrap">
+    <div class="flex items-center justify-end gap-1 text-on-surface-variant">
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="ดูรายละเอียด" type="button">
+        <span class="material-symbols-outlined text-lg">visibility</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="แก้ไข" type="button">
+        <span class="material-symbols-outlined text-lg">edit</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-error transition-colors" title="ลบ" type="button">
+        <span class="material-symbols-outlined text-lg">delete</span>
+      </button>
+    </div>
+  </td>
+</tr>
+<!-- Item 4: Overdue -->
+<tr class="hover:bg-surface-container-low transition-colors">
+  <td class="px-4 py-4 align-middle">
+    <input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-semibold font-label-md text-label-md flex-shrink-0 shadow-sm">
+        ชร
+      </div>
+      <div class="flex flex-col min-w-0">
+        <a class="font-headline-sm text-headline-sm font-semibold text-on-surface hover:text-primary hover:underline truncate" href="#">
+          คุณชญาภา รัตนไพบูลย์
+        </a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant truncate">Nexus Media Group</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex flex-col gap-1">
+      <div class="inline-flex items-center gap-1.5 text-on-surface font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm text-secondary">call</span>
+        <span class="font-numeric-data text-numeric-data">085-776-8899</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 text-emerald-700 font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">chat</span>
+        <span class="">@chayapa.nx</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-xs text-label-xs font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+      เกินกำหนด
+    </span>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <div class="flex flex-col">
+      <span class="font-label-sm text-label-sm font-semibold text-error flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm text-error">warning</span> 22 ต.ค. 2024
+      </span>
+      <span class="font-body-sm text-body-sm text-error/80 pl-5">(ผ่านมา 2 วัน)</span>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle max-w-xs">
+    <p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+      ติดต่อไม่ได้ครั้งแรก ต้องโทรซ้ำช่วงบ่าย
+    </p>
+  </td>
+  <td class="px-4 py-4 align-middle text-right whitespace-nowrap">
+    <div class="flex items-center justify-end gap-1 text-on-surface-variant">
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="ดูรายละเอียด" type="button">
+        <span class="material-symbols-outlined text-lg">visibility</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="แก้ไข" type="button">
+        <span class="material-symbols-outlined text-lg">edit</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-error transition-colors" title="ลบ" type="button">
+        <span class="material-symbols-outlined text-lg">delete</span>
+      </button>
+    </div>
+  </td>
+</tr>
+<!-- Item 5: Today follow-up -->
+<tr class="hover:bg-surface-container-low transition-colors">
+  <td class="px-4 py-4 align-middle">
+    <input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-purple-100 text-purple-900 flex items-center justify-center font-semibold font-label-md text-label-md flex-shrink-0 shadow-sm">
+        ศบ
+      </div>
+      <div class="flex flex-col min-w-0">
+        <a class="font-headline-sm text-headline-sm font-semibold text-on-surface hover:text-primary hover:underline truncate" href="#">
+          ดร.ศิริพร บุญมั่น
+        </a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant truncate">โรงพยาบาลกรุงเทพเวชการ</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex flex-col gap-1">
+      <div class="inline-flex items-center gap-1.5 text-emerald-700 font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">chat</span>
+        <span class="">@dr.siriporn</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm text-secondary">mail</span>
+        <span class="">siriporn.b@bkkhealth.org</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 font-label-xs text-label-xs font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+      ต้องติดตามวันนี้
+    </span>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <div class="flex flex-col">
+      <span class="font-label-sm text-label-sm font-semibold text-amber-700 flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm text-amber-600">schedule</span> วันนี้ 15:00 น.
+      </span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant pl-5">24 ต.ค. 2024</span>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle max-w-xs">
+    <p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+      รอคอนเฟิร์มวันเข้าพรีเซนต์ระบบกับทีมแพทย์
+    </p>
+  </td>
+  <td class="px-4 py-4 align-middle text-right whitespace-nowrap">
+    <div class="flex items-center justify-end gap-1 text-on-surface-variant">
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="ดูรายละเอียด" type="button">
+        <span class="material-symbols-outlined text-lg">visibility</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="แก้ไข" type="button">
+        <span class="material-symbols-outlined text-lg">edit</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-error transition-colors" title="ลบ" type="button">
+        <span class="material-symbols-outlined text-lg">delete</span>
+      </button>
+    </div>
+  </td>
+</tr>
+<!-- Item 6: Closed Won -->
+<tr class="hover:bg-surface-container-low transition-colors">
+  <td class="px-4 py-4 align-middle">
+    <input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-semibold font-label-md text-label-md flex-shrink-0 shadow-sm">
+        ณป
+      </div>
+      <div class="flex flex-col min-w-0">
+        <a class="font-headline-sm text-headline-sm font-semibold text-on-surface hover:text-primary hover:underline truncate" href="#">
+          คุณณัฐวุฒิ ประเสริฐชัย
+        </a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant truncate">Green Energy Solutions</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex flex-col gap-1">
+      <div class="inline-flex items-center gap-1.5 text-on-surface font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm text-secondary">call</span>
+        <span class="font-numeric-data text-numeric-data">084-221-9900</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">mail</span>
+        <span class="">natthawut@greenenergy.th</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-xs text-label-xs font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+      ปิดการขายสำเร็จ
+    </span>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <div class="flex flex-col">
+      <span class="font-label-sm text-label-sm font-semibold text-tertiary-container flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm text-tertiary-container">check_circle</span> 20 ต.ค. 2024
+      </span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant pl-5">(เสร็จสิ้น)</span>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle max-w-xs">
+    <p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+      เซ็นสัญญาเรียบร้อยแล้ว ส่งมอบงานงวดแรกเดือนหน้า
+    </p>
+  </td>
+  <td class="px-4 py-4 align-middle text-right whitespace-nowrap">
+    <div class="flex items-center justify-end gap-1 text-on-surface-variant">
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="ดูรายละเอียด" type="button">
+        <span class="material-symbols-outlined text-lg">visibility</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="แก้ไข" type="button">
+        <span class="material-symbols-outlined text-lg">edit</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-error transition-colors" title="ลบ" type="button">
+        <span class="material-symbols-outlined text-lg">delete</span>
+      </button>
+    </div>
+  </td>
+</tr>
+<!-- Item 7: Pending -->
+<tr class="hover:bg-surface-container-low transition-colors">
+  <td class="px-4 py-4 align-middle">
+    <input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-semibold font-label-md text-label-md flex-shrink-0 shadow-sm">
+        สช
+      </div>
+      <div class="flex flex-col min-w-0">
+        <a class="font-headline-sm text-headline-sm font-semibold text-on-surface hover:text-primary hover:underline truncate" href="#">
+          คุณสุภัทรา ชัยวัฒนกุล
+        </a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant truncate">Creative Studio 9</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex flex-col gap-1">
+      <div class="inline-flex items-center gap-1.5 text-emerald-700 font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">chat</span>
+        <span class="">supattra_c9</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">call</span>
+        <span class="font-numeric-data text-numeric-data">087-443-1122</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-xs text-label-xs font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+      รอดำเนินการ
+    </span>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <div class="flex flex-col">
+      <span class="font-label-sm text-label-sm font-medium text-on-surface flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm text-secondary">event</span> 28 ต.ค. 2024
+      </span>
+      <span class="font-body-sm text-body-sm text-on-surface-variant pl-5">สัปดาห์หน้า</span>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle max-w-xs">
+    <p class="font-body-sm text-body-sm text-on-surface line-clamp-2 leading-relaxed">
+      ขอใบเสนอราคาทางไลน์ รอส่งเอกสารจดทะเบียนบริษัท
+    </p>
+  </td>
+  <td class="px-4 py-4 align-middle text-right whitespace-nowrap">
+    <div class="flex items-center justify-end gap-1 text-on-surface-variant">
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="ดูรายละเอียด" type="button">
+        <span class="material-symbols-outlined text-lg">visibility</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="แก้ไข" type="button">
+        <span class="material-symbols-outlined text-lg">edit</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-error transition-colors" title="ลบ" type="button">
+        <span class="material-symbols-outlined text-lg">delete</span>
+      </button>
+    </div>
+  </td>
+</tr>
+<!-- Item 8: Cancelled -->
+<tr class="hover:bg-surface-container-low transition-colors">
+  <td class="px-4 py-4 align-middle">
+    <input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox">
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-semibold font-label-md text-label-md flex-shrink-0 shadow-sm">
+        วก
+      </div>
+      <div class="flex flex-col min-w-0">
+        <a class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant hover:text-on-surface hover:underline truncate" href="#">
+          คุณวรเมธ เกียรติสกุล
+        </a>
+        <span class="font-body-sm text-body-sm text-on-surface-variant/80 truncate">บมจ. ไทยอินดัสตรี้</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle">
+    <div class="flex flex-col gap-1">
+      <div class="inline-flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">call</span>
+        <span class="font-numeric-data text-numeric-data">083-665-4433</span>
+      </div>
+      <div class="inline-flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+        <span class="material-symbols-outlined text-sm">mail</span>
+        <span class="">vorameth@thai-ind.co.th</span>
+      </div>
+    </div>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-xs text-label-xs font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      ยกเลิก/ระงับ
+    </span>
+  </td>
+  <td class="px-4 py-4 align-middle whitespace-nowrap">
+    <span class="font-body-sm text-body-sm text-on-surface-variant pl-5">-</span>
+  </td>
+  <td class="px-4 py-4 align-middle max-w-xs">
+    <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed">
+      ชะลอโปรเจกต์เนื่องจากงบประมาณปีนี้เต็ม
+    </p>
+  </td>
+  <td class="px-4 py-4 align-middle text-right whitespace-nowrap">
+    <div class="flex items-center justify-end gap-1 text-on-surface-variant">
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="ดูรายละเอียด" type="button">
+        <span class="material-symbols-outlined text-lg">visibility</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-primary transition-colors" title="แก้ไข" type="button">
+        <span class="material-symbols-outlined text-lg">edit</span>
+      </button>
+      <button class="p-1.5 rounded-lg hover:bg-surface-container-high hover:text-error transition-colors" title="ลบ" type="button">
+        <span class="material-symbols-outlined text-lg">delete</span>
+      </button>
+    </div>
+  </td>
+</tr></tbody>
+</table>
+</div>
+<!-- 5. Pagination & Footer -->
+<div class="px-space-md py-3.5 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            แสดง <span class="font-semibold text-on-surface">1 - 8</span> จากทั้งหมด <span class="font-semibold text-on-surface">148</span> รายการ
+          </span>
+<div class="flex items-center gap-2">
+<span class="font-label-xs text-label-xs text-on-surface-variant">แสดงแถวต่อหน้า:</span>
+<select class="appearance-none h-7 pl-2 pr-6 rounded bg-surface-container-lowest font-label-sm text-label-sm text-on-surface focus:outline-none cursor-pointer shadow-sm">
+<option value="10">10</option>
+<option value="25">25</option>
+<option value="50">50</option>
+</select>
+</div>
+</div>
+<!-- Pagination Controls -->
+<nav aria-label="Pagination" class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg text-outline-variant cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm" type="button">
+            1
+          </button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center transition-colors" type="button">
+            2
+          </button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center transition-colors" type="button">
+            3
+          </button>
+<span class="px-1 text-on-surface-variant font-label-sm text-label-sm">...</span>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center transition-colors" type="button">
+            19
+          </button>
+<button class="p-1.5 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</nav>
+</div>
+</div>
+<!-- Quick Stats Cards Footer for High Density Operational Insight -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs pb-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">อัตราการติดต่อสำเร็จสัปดาห์นี้</span>
+<span class="font-display-lg text-display-lg text-on-surface font-bold">88.4%</span>
+<span class="font-label-xs text-label-xs text-tertiary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span> +3.2% จากสัปดาห์ก่อน
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/50 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-2xl">insights</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">เวลาตอบกลับเฉลี่ย (First Response)</span>
+<span class="font-display-lg text-display-lg text-on-surface font-bold">18 นาที</span>
+<span class="font-label-xs text-label-xs text-tertiary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-sm">bolt</span> อยู่ในเกณฑ์ระดับดีเยี่ยม
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">schedule</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ยอดขายที่รอปิดการขาย (Pipeline)</span>
+<span class="font-display-lg text-display-lg text-on-surface font-bold">฿4,850,000</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">layers</span> จาก 18 ลูกค้าที่มีโอกาสสูง
+          </span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-2xl">attach_money</span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div>
+
+</body></html>

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "คุณธนกร เลิศวิจิตร",
+    "company": "บริษัท เทคคอร์ป จำกัด",
+    "email": "thanakorn@example.com",
+    "phone": "081-998-7654",
+    "channel": "LINE",
+    "channelId": "@thanakorn.t",
+    "interest": "Cloud ERP Enterprise Package",
+    "status": "talking",
+    "followUp": "2024-10-24",
+    "notes": "โทรติดตามผลเสนอราคา นัดคุยเรื่องการเริ่มใช้งานระบบ"
+  },
+  {
+    "name": "คุณพิมพา วงศ์สวัสดิ์",
+    "company": "สยามรีเทล โฮลดิ้งส์",
+    "email": "pimpa@example.com",
+    "phone": "082-123-4567",
+    "channel": "Email",
+    "channelId": "pimpa@example.com",
+    "interest": "ระบบจัดการสต็อกสินค้า",
+    "status": "talking",
+    "followUp": "2024-10-24",
+    "notes": "ส่งเอกสารสเปกฮาร์ดแวร์และใบรับรองความปลอดภัยเพิ่มเติม"
+  },
+  {
+    "name": "คุณกิตติศักดิ์ พัฒนศิลป์",
+    "company": "บจก. พัฒนาการขนส่ง",
+    "email": "kittisak@example.com",
+    "phone": "089-112-3344",
+    "channel": "Phone",
+    "channelId": "089-112-3344",
+    "interest": "ระบบบริหารงานขนส่ง",
+    "status": "talking",
+    "followUp": "2024-10-23",
+    "notes": "นัดสรุปสัญญาต่อรองราคารายปีกับทีมจัดซื้อ"
+  },
+  {
+    "name": "ดร.ศิริพร บุญมั่น",
+    "company": "โรงพยาบาลกรุงเทพเวชการ",
+    "email": "siriporn@example.com",
+    "phone": "080-555-0104",
+    "channel": "LINE",
+    "channelId": "@dr.siriporn",
+    "interest": "ระบบวิเคราะห์ข้อมูล",
+    "status": "new",
+    "followUp": "2024-10-25",
+    "notes": "สอบถามผลการประชุมบอร์ดบริหาร"
+  },
+  {
+    "name": "คุณอนันต์ สุขเกษม",
+    "company": "สมาร์ท พาวเวอร์ เอ็นจิเนียริ่ง",
+    "email": "anan@example.com",
+    "phone": "086-554-3210",
+    "channel": "Facebook",
+    "channelId": "Smart Power",
+    "interest": "ระบบบัญชีองค์กร",
+    "status": "talking",
+    "followUp": "2024-10-22",
+    "notes": "ติดตามใบแจ้งหนี้รอบแรกและประสานงานฝ่ายการเงิน"
+  },
+  {
+    "name": "คุณณัฐวุฒิ ประเสริฐชัย",
+    "company": "Green Energy Solutions",
+    "email": "natthawut@example.com",
+    "phone": "084-221-9900",
+    "channel": "Email",
+    "channelId": "natthawut@example.com",
+    "interest": "ระบบบริหารโครงการ",
+    "status": "closed",
+    "followUp": "2024-10-20",
+    "notes": "เซ็นสัญญาเรียบร้อยแล้ว ส่งมอบงานงวดแรกเดือนหน้า"
+  },
+  {
+    "name": "คุณสุภัทรา ชัยวัฒนกุล",
+    "company": "Creative Studio 9",
+    "email": "supattra@example.com",
+    "phone": "087-443-1122",
+    "channel": "LINE",
+    "channelId": "supattra_c9",
+    "interest": "แพ็กเกจเว็บไซต์ธุรกิจ",
+    "status": "new",
+    "followUp": "2024-10-28",
+    "notes": "ขอใบเสนอราคาทางไลน์ รอส่งเอกสารจดทะเบียนบริษัท"
+  },
+  {
+    "name": "คุณวรเมธ เกียรติสกุล",
+    "company": "บมจ. ไทยอินดัสตรี้",
+    "email": "vorameth@example.com",
+    "phone": "083-665-4433",
+    "channel": "Phone",
+    "channelId": "083-665-4433",
+    "interest": "ระบบจัดซื้อ",
+    "status": "closed",
+    "followUp": "",
+    "notes": "ชะลอโปรเจกต์เนื่องจากงบประมาณปีนี้เต็ม"
+  }
+]
